@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SakBrowser</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6475/6475165.png">
+</head>
+<body>
+    <div class="settings-modal" id="settingsModal">
+        <div class="settings-content">
+            <h2 class="settings-title">Settings</h2>
+            <div class="setting-group">
+                <label for="languageSelect" class="language-label">Language:</label>
+                <select id="languageSelect">
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </div>
+            <div class="setting-group">
+                <label for="themeSelect" class="theme-label">Theme:</label>
+                <select id="themeSelect">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="browser-container">
+        <div class="settings-icon">
+            <i class="fas fa-cog" id="settingsButton"></i>
+        </div>
+        <a href="index.html" class="logo">
+            <span class="pink">Sak</span>Browser
+        </a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

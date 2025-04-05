@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - SakBrowser</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6475/6475165.png">
+</head>
+<body>
+    <div class="settings-modal" id="settingsModal">
+        <div class="settings-content">
+            <h2>Settings</h2>
+            <div class="setting-group">
+                <label for="languageSelect"></label>
+                <select id="languageSelect">
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </div>
+            <div class="setting-group">
+                <label for="themeSelect"></label>
+                <select id="themeSelect">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-page">
+        <div class="search-header">
+            <a href="index.html" class="logo-small">
+                <span class="pink">Sak</span>Browser
+            </a>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="settings-icon">
+                <i class="fas fa-cog" id="settingsButton"></i>
+            </div>
+        </div>
+
+        <div class="search-results">
+            <div class="result-item">RESULT 1</div>
+            <div class="result-item">RESULT 2</div>
+            <div class="result-item">RESULT 3</div>
+            <div class="result-item">RESULT 4</div>
+        </div>
+
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
